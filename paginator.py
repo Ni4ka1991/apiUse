@@ -22,7 +22,6 @@ init_pg = 1
 # data conversion
 
 data.items()
-print(list(data.items())[0])
 
 
 # view data
