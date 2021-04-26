@@ -2,7 +2,10 @@
 
 # paginator.py
 
+
 from data import *
+from select import *
+
 import math
 from os import system
 from random import randint
@@ -50,7 +53,13 @@ dataList( anchor )
 
 while True:
 
- navigator = input( "\nEnter p to change page number or < / >  to go to the prev / next pages. Enter x to exit. >>>  " )
+ navigator = input(\
+         "\n1. Enter p to change page number.\
+         \n2. Enter < / >  to go to the prev / next pages.\
+         \n3. Enter x to exit.\
+         \n4. Enter s to get info separately.\
+         \n >>>  "\
+    )
  print()
  if( navigator == "p" ):
    invite = int( input( f"Select a page from the range 1 to {pages}  >>>  " ))
@@ -80,6 +89,10 @@ while True:
  elif( navigator == "x"):
   print( "By, by!" )
   break
+ elif( navigator == "s" ):
+#  chooseOne( viewList )
+  blabla()
+  print(" I need to think about it ...")
  else:
   print( "Be careful!" )
  

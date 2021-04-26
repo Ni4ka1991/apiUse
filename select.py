@@ -1,27 +1,17 @@
+
 #!/usr/bin/env python3
 
-# app.py main module
+# select.py
 
 from os import system
 
-from paginator import *
 from data import *
-from select import *
-
 
 # import var
 
 data, query = importData()
 viewList = dataConversion(data)
 
-
-
-def viewInfo():
-
- if( data['status'] == "success" ):
-  paginator( 1 )
- else:
-  print( "ERROR: ", data['message'])
  
 def chooseOne( viewList ):
 
@@ -29,4 +19,6 @@ def chooseOne( viewList ):
  if( choice == 1 or choice == 'status' ):
      print( viewList[0][choice])
 
-
+def blabla():
+    print( "Bla...bla.. bla" )
+    return
