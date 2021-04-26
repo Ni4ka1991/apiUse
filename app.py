@@ -9,10 +9,13 @@ from data import *
 
 data, query = importData()
 
+def viewInfo():
 
-if( data['status'] == "success" ):
- paginator( 1 )
-else:
- print( "ERROR: ", data['message'])
+ if( data['status'] == "success" ):
+  paginator( 1 )
+ else:
+  print( "ERROR: ", data['message'])
+
+#viewInfo()
 
 

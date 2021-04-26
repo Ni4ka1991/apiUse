@@ -17,3 +17,10 @@ def importData( ):
  data = res.json() # decoding by recuests module built-in func .json()
  
  return [data, query]
+
+def dataConversion(data):
+
+ data.items()
+ data_as_list = list(data.items())
+
+ return data_as_list
