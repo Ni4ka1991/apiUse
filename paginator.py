@@ -4,7 +4,7 @@
 
 
 from data import *
-from select import *
+from select_one import *
 
 import math
 from os import system
@@ -89,10 +89,9 @@ while True:
  elif( navigator == "x"):
   print( "By, by!" )
   break
- elif( navigator == "s" ):
-#  chooseOne( viewList )
-  blabla()
-  print(" I need to think about it ...")
+ elif( navigator == "s" ): 
+  chooseOne( viewList )
+#  break
  else:
   print( "Be careful!" )
  

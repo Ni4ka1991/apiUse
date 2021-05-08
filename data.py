@@ -5,6 +5,7 @@
 
 import requests #pip install requests pypi.org
 
+
 def importData( ):
  
  query = input( "Enter a domain or ip >>>  " )
@@ -17,6 +18,8 @@ def importData( ):
  data = res.json() # decoding by recuests module built-in func .json()
  
  return [data, query]
+
+
 
 def dataConversion(data):
 

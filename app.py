@@ -6,7 +6,6 @@ from os import system
 
 from paginator import *
 from data import *
-from select import *
 
 
 # import var
@@ -23,10 +22,5 @@ def viewInfo():
  else:
   print( "ERROR: ", data['message'])
  
-def chooseOne( viewList ):
-
- choice = input( f"Enter a ordinal number or name of param you want to know about {query} >>>" )
- if( choice == 1 or choice == 'status' ):
-     print( viewList[0][choice])
 
 
