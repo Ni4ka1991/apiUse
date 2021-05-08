@@ -11,13 +11,6 @@ from os import system
 from random import randint
 
 
-# import var
-
-data, query = importData()
-viewList = dataConversion(data)
-
-# local var
-
 USERS_PG = 4
 pages = math.ceil( len( data )/USERS_PG )
 init_pg = 1
@@ -47,7 +40,7 @@ def dataList( init_pg ):
 
  ####### PRINT USER LIST #########
 
-anchor = 1
+anchor = 1 # initial page 
 
 dataList( anchor ) 
 
@@ -64,8 +57,9 @@ while True:
  if( navigator == "p" ):
    invite = int( input( f"Select a page from the range 1 to {pages}  >>>  " ))
   
-   if( anchor <= invite and invite <= pages ): # I see one mistake here   
+   if( anchor <= invite and invite <= pages ):   
      dataList( invite )
+     anchor = invite
 
    else:
      print( "Such page is not in the list" )
@@ -87,25 +81,12 @@ while True:
     print( f"You are already  on the last < {pages} > page." )
     input( "hit ENTER to continue" )
  elif( navigator == "x"):
-  print( "By, by!" )
-  break
+    print( "By, by!" )
+    break
  elif( navigator == "s" ): 
   chooseOne( viewList )
-#  break
  else:
   print( "Be careful!" )
- 
-
-
-
-
-
-
-
-
-
-
-
  
 # ####### PRINT USER LIST #########
 

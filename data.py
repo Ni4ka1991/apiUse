@@ -20,10 +20,12 @@ def importData( ):
  return [data, query]
 
 
-
 def dataConversion(data):
 
  data.items()
  data_as_list = list(data.items())
 
  return data_as_list
+
+data, query = importData()
+viewList = dataConversion( data )
