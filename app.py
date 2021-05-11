@@ -9,7 +9,7 @@ from data import *
 
 def viewInfo( ):
     if( data['status'] == "success" ):
-        paginator( 1 )
+       pass
     else:
         print( "ERROR: ", data['message'])
 
